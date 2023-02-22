@@ -25,7 +25,6 @@ const Leaderboards = () => {
     });
     return r;
   }, []);
-
   sortList(result);
   console.log(result)
    const list = result.map((user) => (
@@ -66,6 +65,8 @@ const UserTimeList = ({user}) => {
         )
 }
 function sortList (array) {
-    return array.sort((a, b) => (a.time > b.time ? 1 : -1));
+    //console.log(array);
+    return array.sort((a, b) => (a.timeRecord > b.timeRecord ? 1 : -1));
+    //(a.time > b.time ? 1 : -1)
 }
 export default Leaderboards;
