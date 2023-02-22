@@ -10,7 +10,7 @@ const FinishedGame = ({timeRecord, props}) => {
     const level = props.currentLevel;
     const navigate = useNavigate();
     const backHome = () => {
-        navigate("/");
+        navigate("/photo-tagging-top");
     }
     return (
         <div  className="won-game">

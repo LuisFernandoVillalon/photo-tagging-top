@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Home = (props) => {
     const navigate = useNavigate();
     const changeRouteToHome = () => {
-        navigate("/");
+        navigate("/photo-tagging-top");
     }
     return (
         <div>

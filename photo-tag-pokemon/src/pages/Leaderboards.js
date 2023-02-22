@@ -17,7 +17,7 @@ const Leaderboards = () => {
    ))
    const navigate = useNavigate();
    const changeRouteToHome = () => {
-       navigate("/");
+       navigate("/photo-tagging-top");
    }
    const result = currentList.reduce(function (r, o) {
     Object.keys(o).forEach(function (k) {

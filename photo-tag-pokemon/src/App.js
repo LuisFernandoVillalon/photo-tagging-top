@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div className="body-container">
-        <BrowserRouter>
+        <BrowserRouter path="/photo-tagging-top">
           <Routes>
-            <Route path="/" element={<Home 
+            <Route path="/photo-tagging-top" element={<Home 
               currentBoard={currentBoard} setCurrentBoard={setCurrentBoard}
               currentLevel={currentLevel} setCurrentLevel={setCurrentLevel}
             />} />

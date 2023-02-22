@@ -83,7 +83,7 @@ const Game = (props) => {
                 }
             });
         }
-        navigate("/");
+        navigate("/photo-tagging-top");
     }
 
     let currentCharactersArray = [];
