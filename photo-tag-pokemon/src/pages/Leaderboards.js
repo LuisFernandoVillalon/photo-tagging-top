@@ -25,6 +25,9 @@ const Leaderboards = () => {
     });
     return r;
   }, []);
+
+  sortList(result);
+  console.log(result)
    const list = result.map((user) => (
     
      <UserTimeList 
@@ -54,7 +57,7 @@ const IndividualLevel = ({currentLevel, setCurrentList}) => {
 }
 
 const UserTimeList = ({user}) => {
-    console.log(user);
+    //sortList(user);
         return (
             <div className="record-item">
                 <div >{user.timeRecord}</div>
@@ -62,5 +65,7 @@ const UserTimeList = ({user}) => {
             </div>
         )
 }
-
+function sortList (array) {
+    return array.sort((a, b) => (a.time > b.time ? 1 : -1));
+}
 export default Leaderboards;

@@ -1,9 +1,9 @@
-@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #DD7230;
+    background-color: blue;
 }
 .levels-container {
     display: flex;
@@ -16,10 +16,10 @@ body {
     width: 25%;
 }
 header {
-    font-family: Pokemon;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.25rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     font-size: 5.5rem;
     text-align: center;
 }
@@ -27,18 +27,18 @@ header:hover {
     cursor: pointer;
 }
 p {
-    font-family: Pokemon;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.15rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     font-size: 2rem;
     text-align: center;
 }
 h2, h3 {
-    font-family: Pokemon;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.15rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     font-size: 3rem;
     text-align: center;
 }
@@ -78,13 +78,14 @@ h2, h3 {
 }
 button {
     color: yellow;
-    background-color: yellow;
+    background-color: blue;
     -webkit-text-stroke-width: 0.15rem;
-    -webkit-text-stroke-color: blue;
-    font-family: pokemon;
+    -webkit-text-stroke-color: yellow;
+    font-family: 'Nabla', cursive;
     font-size: 2rem;
     border-radius: 15px;
-    border-style: none;
+    border-width: 5px;
+    border-color: yellow;
 }
 button:hover {
     cursor: pointer;
@@ -93,18 +94,18 @@ button:hover {
     position: absolute;
     top:0;
     left:0;
-    background-color: white;
+    background-color: #9a031e;
     border-radius: 5px;
     width: 13%;
     border-width: 15px;
     border-style: double;
-    border-color: blue;
+    border-color: yellow;
 }
 .option {
-    font-family: Pokemon;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.08rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     padding: 5%;
     border-width: 5px;
     border-color: black;
@@ -131,31 +132,31 @@ button:hover {
     position: absolute;
     top: 20%;
     left: 45%;
-    background-color: white;
-    font-family: Pokemon;
+    background-color: #9a031e;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.08rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     font-size: 2rem;
     padding: 0.5%;
     border-width: 15px;
     border-style: double;
-    border-color: blue;
+    border-color: yellow;
 }
 .opaque {
     opacity: 0.5;
 }
 .timer {
-    font-family: Pokemon;
-    background-color: white;
-    font-family: Pokemon;
+    font-family: 'Nabla', cursive;
+    background-color: #9a031e;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.08rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     padding: 10px;
     border-width: 10px;
     border-style: double;
-    border-color: blue;
+    border-color: yellow;
     border-radius: 10%;
 }
 .home-timer-container {
@@ -168,16 +169,13 @@ button:hover {
     position: absolute;
     top: 20%;
     left: 35%;
-    background-color: white;
-    font-family: Pokemon;
-    color: yellow;
-    -webkit-text-stroke-width: 0.08rem;
-    -webkit-text-stroke-color: blue;
+    background-color: #9a031e;
+    font-family: 'Nabla', cursive;
     font-size: 2rem;
     padding: 0.5%;
     border-width: 15px;
     border-style: double;
-    border-color: blue;
+    border-color: yellow;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -186,18 +184,19 @@ input {
     height: 2rem;
     font-size: 1.5rem;
     margin: 5%;
+    color: #9a031e;
 }
 .leaderboard-info-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #9a031e;
     margin: 2.5%;
     padding: 1.5%;
     border-radius: 15px;
     border-width: 15px;
     border-style: double;
-    border-color: blue;
+    border-color: yellow;
 }
 .leaderboard-btn {
     padding: 2.5%;
@@ -207,19 +206,19 @@ input {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #9a031e;
     margin: 2.5%;
     padding: 1.5%;
     border-radius: 15px;
     border-width: 15px;
     border-style: double;
-    border-color: blue;
+    border-color: yellow;
 }
 .record-item {
-    font-family: Pokemon;
+    font-family: 'Nabla', cursive;
     color: yellow;
     -webkit-text-stroke-width: 0.08rem;
-    -webkit-text-stroke-color: blue;
+    -webkit-text-stroke-color: yellow;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -228,5 +227,5 @@ input {
 
     border-bottom-width: 5px;
     border-bottom-style: double;
-    border-bottom-color: blue;
+    border-bottom-color: yellow;
 }
