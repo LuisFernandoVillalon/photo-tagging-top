@@ -1,16 +1,25 @@
 {
   "files": {
     "main.css": "/photo-tagging-top/static/css/main.eb10f54a.css",
-    "main.js": "/photo-tagging-top/static/js/main.289a597f.js",
+    "main.js": "/photo-tagging-top/static/js/main.9137c325.js",
+    "static/media/0095Onix.png": "/photo-tagging-top/static/media/0095Onix.3be1d728394b83d14350.png",
     "static/media/01.jpg": "/photo-tagging-top/static/media/01.8acb0c259470acbaddde.jpg",
+    "static/media/0042Golbat.png": "/photo-tagging-top/static/media/0042Golbat.b543fbbfe22f6a015afe.png",
+    "static/media/0044Gloom.png": "/photo-tagging-top/static/media/0044Gloom.32a4766bd6110609735e.png",
+    "static/media/0013Weedle.png": "/photo-tagging-top/static/media/0013Weedle.9c19ac4831e5d3a3ba6b.png",
     "static/media/00.jpg": "/photo-tagging-top/static/media/00.c69678b572a6b6ae9a7a.jpg",
     "static/media/02.jpg": "/photo-tagging-top/static/media/02.f4eb1c338b9ed293a77f.jpg",
+    "static/media/0140Kabuto.png": "/photo-tagging-top/static/media/0140Kabuto.430731bbb4c370d3eec9.png",
+    "static/media/0127Pinsir.png": "/photo-tagging-top/static/media/0127Pinsir.6b13967f3453838f61e3.png",
+    "static/media/0174Igglybuff.png": "/photo-tagging-top/static/media/0174Igglybuff.0bbe06b182e7c723d87c.png",
+    "static/media/0177Natu.png": "/photo-tagging-top/static/media/0177Natu.0e982029ca1d0eee0716.png",
+    "static/media/0148Dragonair.png": "/photo-tagging-top/static/media/0148Dragonair.7acdb1c9f831f54191a4.png",
     "index.html": "/photo-tagging-top/index.html",
     "main.eb10f54a.css.map": "/photo-tagging-top/static/css/main.eb10f54a.css.map",
-    "main.289a597f.js.map": "/photo-tagging-top/static/js/main.289a597f.js.map"
+    "main.9137c325.js.map": "/photo-tagging-top/static/js/main.9137c325.js.map"
   },
   "entrypoints": [
     "static/css/main.eb10f54a.css",
-    "static/js/main.289a597f.js"
+    "static/js/main.9137c325.js"
   ]
 }
