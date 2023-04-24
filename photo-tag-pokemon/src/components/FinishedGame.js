@@ -7,7 +7,7 @@ const FinishedGame = ({timeRecord, props}) => {
     const handleChange = (e) => {
         setUsername(e.target.value)
     }
-    const level = props.currentLevel;
+    const currLevel = props.currentLevel;
     const navigate = useNavigate();
     const backHome = () => {
         navigate("/photo-tagging-top");
@@ -19,7 +19,7 @@ const FinishedGame = ({timeRecord, props}) => {
             <div>Your time: {timeRecord}</div>
             <input type="text" onChange={handleChange} placeholder="Enter a username to display"></input>
             <button onClick={() => {
-                addTimetoDatabase({timeRecord, username, level}),
+                addTimetoDatabase({timeRecord, username, currLevel}),
                 backHome()
             }} type="submit">Submit</button>
         </div>

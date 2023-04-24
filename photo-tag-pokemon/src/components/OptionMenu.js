@@ -1,12 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
 import uniqid from "uniqid";
 import Sky from "../LevelData/Sky";
 import City from "../LevelData/City";
 import House from "../LevelData/House";
 import "../style.css";
 import { formatTime } from "./Timer";
+import Pokeball from "../assets/pokeball.png";
 
-//const temp = optMenuData;
+
 const OptionMenu = (props) => {
     let pokeList = [];
     if (props.props.currentLevel == 2) {
@@ -32,7 +32,7 @@ const OptionMenu = (props) => {
     ))
 
     return (
-        <div className="option-menu"  style={{top: props.yCoord, left: props.xCoord}}>
+        <div className="option-menu" style={{top: props.yCoord, left: props.xCoord}}>
             {optionsList}
         </div>
         )
@@ -59,10 +59,9 @@ function checkPosition(x , y, array, setSelectionStatus, screen, setCharacterFou
         genY >= array.yCoord[0] && 
         genY <= array.yCoord[1]
     ) {
-            //currentOption.profile = "https://archives.bulbagarden.net/media/upload/7/79/Dream_Pok%C3%A9_Ball_Sprite.png";
              for (let i = 0; i < pokeList.length; ++i) {
                  if (array.name === pokeList[i].name) {
-                    pokeList[i].profile = "https://archives.bulbagarden.net/media/upload/7/79/Dream_Pok%C3%A9_Ball_Sprite.png";
+                    pokeList[i].profile = Pokeball;
                     pokeList[i].found = true;
                  }
              }

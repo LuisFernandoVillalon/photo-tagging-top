@@ -9,6 +9,15 @@ import City from "../LevelData/City";
 import House from "../LevelData/House";
 import Timer from "../components/Timer";
 import FinishedGame from "../components/FinishedGame";
+import Pinsir from "../assets/pokemon/0127Pinsir.png";
+import Kabuto from "../assets/pokemon/0140Kabuto.png";
+import Dragonair from "../assets/pokemon/0148Dragonair.png";
+import Golbat from "../assets/pokemon/0042Golbat.png";
+import Weedle from "../assets/pokemon/0013Weedle.png";
+import Gloom from "../assets/pokemon/0044Gloom.png";
+import Natu from "../assets/pokemon/0177Natu.png";
+import Onix from "../assets/pokemon/0095Onix.png";
+import Igglybuff from "../assets/pokemon/0174Igglybuff.png";
 
 const Game = (props) => {
     
@@ -46,39 +55,39 @@ const Game = (props) => {
         if (props.currentLevel == 2) {
             Sky.forEach((e) => {
                 if (e.name == "Natu") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/7/71/0177Natu.png";
+                    e.profile = Natu;
                     e.found = false;
                 } else if (e.name == "Onix") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/b/b7/0095Onix.png";
+                    e.profile = Onix;
                     e.found = false;
                 } else if (e.name == "Igglybuff") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/0/06/0174Igglybuff.png";
+                    e.profile = Igglybuff;
                     e.found = false;
                 }
             });
         } else if (props.currentLevel == 1) {
             City.forEach((e) => {
                 if (e.name == "Pinsir") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/a/a9/0127Pinsir.png";
+                    e.profile = Pinsir;
                     e.found = false;
                 } else if (e.name == "Kabuto") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/d/d2/0140Kabuto.png";
+                    e.profile = Kabuto;
                     e.found = false;
                 } else if (e.name == "Dragonair") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/0/0d/0148Dragonair.png";
+                    e.profile = Dragonair;
                     e.found = false;
                 }
             });
         } else if (props.currentLevel == 0) {
             House.forEach((e) => {
                 if (e.name == "Golbat") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/7/76/0042Golbat.png";
+                    e.profile = Golbat;
                     e.found = false;
                 } else if (e.name == "Weedle") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/3/36/0013Weedle.png";
+                    e.profile = Weedle;
                     e.found = false;
                 } else if (e.name == "Gloom") {
-                    e.profile = "https://archives.bulbagarden.net/media/upload/e/e0/0044Gloom.png";
+                    e.profile = Gloom;
                     e.found = false;
                 }
             });
@@ -125,7 +134,8 @@ const Game = (props) => {
                 onLoad={(e) => onImgLoad(setScreen, e)}
                 onClick={(e) => {
                     showOptions(e, optionStatus, setOptionStatus, setXCoord, setYCoord, screen)
-                }} />
+                }} 
+                />
                 {optionStatus && <OptionMenu 
                     props={props}
                     currentCharactersArray={currentCharactersArray}
@@ -153,20 +163,17 @@ function onImgLoad(setScreen, e)  {
 function showOptions(e, optionStatus, setOptionStatus, setXCoord, setYCoord, screen) { 
       const genX = Math.round(((e.pageX )/ screen.width) * 100);
 	  const genY = Math.round(((e.pageY ) / screen.height) * 100);
-    // // //  console.log([e.clientX, e.clientY])
-    // // //  console.log([e.pageX, e.pageY])
-    // //  console.log([e.screenX, e.screenY])
     console.log([genX, genY]);
     if (optionStatus == false) { 
         setOptionStatus(true);
         setXCoord(e.pageX);
         setYCoord(e.pageY);
-    } else {
+    } 
+    else {
         setOptionStatus(false);
         setXCoord(0);
         setYCoord(0);
     }
 }
-  
 
 export default Game;

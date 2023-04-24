@@ -6,7 +6,7 @@ import { getRecords } from "../LevelData/firebaseData";
 import React, { useState } from "react";
 
 const Leaderboards = () => {
-    const [currentList, setCurrentList] = useState([]);
+    let [currentList, setCurrentList] = useState([]);
 
     const levelList = levelData.map((currentLevel) => (
         <IndividualLevel 
@@ -19,14 +19,20 @@ const Leaderboards = () => {
    const changeRouteToHome = () => {
        navigate("/photo-tagging-top");
    }
-   const result = currentList.reduce(function (r, o) {
+   let temp = [];
+   if (currentList === undefined) {
+    currentList = temp;
+   } else {
+    temp = currentList;
+   }
+   const result = temp.reduce(function (r, o) {
     Object.keys(o).forEach(function (k) {
       r.push(o[k]);
     });
     return r;
   }, []);
   sortList(result);
-  console.log(result)
+  console.log(result);
    const list = result.map((user) => (
     
      <UserTimeList 
@@ -50,7 +56,7 @@ const IndividualLevel = ({currentLevel, setCurrentList}) => {
     return (
         <div className="level-info-container">
             <h2>{currentLevel.name}</h2>
-            <img  className="level-select" src={currentLevel.cover} onClick={() => getRecords(currentLevel.level, {setCurrentList})} />
+            <img  className="level-select" src={currentLevel.cover} onClick={() => getRecords(currentLevel.level, setCurrentList)} />
         </div>
     )
 }

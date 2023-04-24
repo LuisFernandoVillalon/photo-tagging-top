@@ -1,6 +1,16 @@
 import HouseLevel from "../assets/00.jpg";
 import CityLevel from "../assets/01.jpg";
 import TowerLevel from "../assets/02.jpg";
+import Pinsir from "../assets/pokemon/0127Pinsir.png";
+import Kabuto from "../assets/pokemon/0140Kabuto.png";
+import Dragonair from "../assets/pokemon/0148Dragonair.png";
+import Golbat from "../assets/pokemon/0042Golbat.png";
+import Weedle from "../assets/pokemon/0013Weedle.png";
+import Gloom from "../assets/pokemon/0044Gloom.png";
+import Natu from "../assets/pokemon/0177Natu.png";
+import Onix from "../assets/pokemon/0095Onix.png";
+import Igglybuff from "../assets/pokemon/0174Igglybuff.png";
+
 
 const Zero = {
   level: 0,
@@ -10,21 +20,21 @@ const Zero = {
   characters: [
     {
       name: "Golbat",
-      profile: "https://archives.bulbagarden.net/media/upload/7/76/0042Golbat.png",
+      profile: Golbat,
       found: false,
       xCoord: [62,65],
       yCoord: [37,40],
     },
     {
       name: "Weedle",
-      profile: "https://archives.bulbagarden.net/media/upload/3/36/0013Weedle.png",
+      profile: Weedle,
       found: false,
       xCoord: [64, 68],
       yCoord: [61, 66],
     },
     {
       name: "Gloom",
-      profile: "https://archives.bulbagarden.net/media/upload/e/e0/0044Gloom.png",
+      profile: Gloom,
       found: false,
       xCoord: [20, 26],
       yCoord: [88, 94],
@@ -39,21 +49,21 @@ const One = {
   characters: [
     {
       name: "Pinsir",
-      profile: "https://archives.bulbagarden.net/media/upload/a/a9/0127Pinsir.png",
+      profile: Pinsir,
       found: false,
       xCoord: [10, 19],
       yCoord: [100, 105],
     },
     {
       name: "Kabuto",
-      profile: "https://archives.bulbagarden.net/media/upload/d/d2/0140Kabuto.png",
+      profile: Kabuto,
       found: false,
       xCoord: [51, 59],
       yCoord: [73, 77],
     },
     {
       name: "Dragonair",
-      profile: "https://archives.bulbagarden.net/media/upload/0/0d/0148Dragonair.png",
+      profile: Dragonair,
       found: false,
       xCoord: [31, 39],
       yCoord: [33, 42],
@@ -68,21 +78,21 @@ const Two = {
   characters: [
     {
       name: "Natu",
-      profile: "https://archives.bulbagarden.net/media/upload/7/71/0177Natu.png",
+      profile: Natu,
       found: false,
       xCoord: [0, 4],
       yCoord: [64, 67],
     },
     {
       name: "Onix",
-      profile: "https://archives.bulbagarden.net/media/upload/b/b7/0095Onix.png",
+      profile: Onix,
       found: false,
       xCoord: [65, 73],
       yCoord: [105, 110],
     },
     {
       name: "Igglybuff",
-      profile: "https://archives.bulbagarden.net/media/upload/0/06/0174Igglybuff.png",
+      profile: Igglybuff,
       found: false,
       xCoord: [28, 39],
       yCoord: [53, 61],

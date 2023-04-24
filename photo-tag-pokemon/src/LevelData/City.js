@@ -1,24 +1,28 @@
+import Pinsir from "../assets/pokemon/0127Pinsir.png";
+import Kabuto from "../assets/pokemon/0140Kabuto.png";
+import Dragonair from "../assets/pokemon/0148Dragonair.png";
+
 const City =  [
       {
         name: "Pinsir",
-        profile: "https://archives.bulbagarden.net/media/upload/a/a9/0127Pinsir.png",
+        profile: Pinsir,
         found: false,
         xCoord: [10, 19],
-        yCoord: [100, 105],
+        yCoord: [96, 101],
       },
       {
         name: "Kabuto",
-        profile: "https://archives.bulbagarden.net/media/upload/d/d2/0140Kabuto.png",
+        profile: Kabuto,
         found: false,
         xCoord: [51, 59],
-        yCoord: [73, 77],
+        yCoord: [69, 73],
       },
       {
         name: "Dragonair",
-        profile: "https://archives.bulbagarden.net/media/upload/0/0d/0148Dragonair.png",
+        profile: Dragonair,
         found: false,
         xCoord: [31, 39],
-        yCoord: [33, 42],
+        yCoord: [29, 38],
       },
     ]
 

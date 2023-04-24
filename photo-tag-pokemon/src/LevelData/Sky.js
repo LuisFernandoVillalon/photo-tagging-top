@@ -1,25 +1,29 @@
+import Natu from "../assets/pokemon/0177Natu.png";
+import Onix from "../assets/pokemon/0095Onix.png";
+import Igglybuff from "../assets/pokemon/0174Igglybuff.png";
+
 const Sky = 
  [
     {
       name: "Natu",
-      profile: "https://archives.bulbagarden.net/media/upload/7/71/0177Natu.png",
+      profile: Natu,
       found: false,
       xCoord: [0, 4],
-      yCoord: [64, 67],
+      yCoord: [69, 74],
     },
     {
       name: "Onix",
-      profile: "https://archives.bulbagarden.net/media/upload/b/b7/0095Onix.png",
+      profile: Onix,
       found: false,
       xCoord: [65, 73],
-      yCoord: [105, 110],
+      yCoord: [109, 116],
     },
     {
       name: "Igglybuff",
-      profile: "https://archives.bulbagarden.net/media/upload/0/06/0174Igglybuff.png",
+      profile: Igglybuff,
       found: false,
-      xCoord: [28, 39],
-      yCoord: [53, 61],
+      xCoord: [36, 39],
+      yCoord: [63, 67],
     },
   ]
 
